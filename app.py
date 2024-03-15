@@ -63,8 +63,6 @@ async def action(message):
         color=0xFF0000
     )
     user_reply = await message.reply(embed=embed)
-
-    embed.add_field(name="**Message**", value=f"{message.content}")
     await asyncio.sleep(30)
     try:
         await message.delete()
